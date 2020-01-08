@@ -38,6 +38,8 @@ IF(reponse.code == 200)
 
 *.../api/identity/login*
 
+*Before Login you must REGISTER!!*
+
 *This action login in user and return 2 tokens => access_token, refresh_token*
 
 ```
