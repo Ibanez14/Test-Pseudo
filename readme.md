@@ -93,16 +93,13 @@ http.Headers.Add("Authorization", $'Bearer {accessToken}');
 
 var response =  http.Post("api/courses");
 
-// If access_tken expires 401 comes
 if(response.code == 200)
 {
     DisplayToUser(response.object.courses);
 }
-```
 
 
-
-```
+// If access_token expires 401 code comes
 if(response == 401)
 {
     // get your tokens from local storage and send them to server to get new tokens
