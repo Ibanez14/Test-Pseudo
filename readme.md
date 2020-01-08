@@ -2,6 +2,7 @@
 ## USER REGISTRATION
 
 *This url registers user and sends confirmation email*
+
 *. . . /api/identity/register*
 
 
@@ -37,6 +38,7 @@ IF(reponse.code == 200)
 ## User Login
 
 *This url login in user and return 2 tokens => access_token, refresh_token*
+
 *. . . /api/identity/login*
 
 *Before Login you must REGISTER!!*
