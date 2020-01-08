@@ -1,10 +1,10 @@
 
 ## USER REGISTRATION
 
-
+*This url registers user and sends confirmation email*
 *. . . /api/identity/register*
 
-*This action registers user and sends confirmation email*
+
 
 
 ```
@@ -36,11 +36,12 @@ IF(reponse.code == 200)
 
 ## User Login
 
+*This url login in user and return 2 tokens => access_token, refresh_token*
 *. . . /api/identity/login*
 
 *Before Login you must REGISTER!!*
 
-*This action login in user and return 2 tokens => access_token, refresh_token*
+
 
 ```
 
@@ -75,9 +76,12 @@ IF (reponse.code == 200)
 
 ## Get Courses 
 
+*This url return list of courses if User authenticated*
+
 *. . . /api/courses*
 
-*Return list of courses if User authenticated*
+*Before getting courses you must LOGIN!!!*
+
 
 ```
 var accessToken = LocalStorage.GetItem("accessToken");
