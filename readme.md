@@ -3,6 +3,7 @@
 
 
 *.../api/identity/register*
+
 *This action registers user and sends confirmation email*
 
 
@@ -36,6 +37,7 @@ IF(reponse.code == 200)
 ## User Login
 
 *.../api/identity/login*
+
 *This action login in user and return 2 tokens => access_token, refresh_token*
 
 ```
@@ -72,6 +74,7 @@ IF (reponse.code == 200)
 ## Get Courses 
 
 *api/courses*
+
 *Return list of courses if User authenticated*
 
 ```
