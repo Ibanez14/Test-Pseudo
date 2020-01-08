@@ -2,7 +2,7 @@
 ## USER REGISTRATION
 
 
-*.../api/identity/register*
+*. . . /api/identity/register*
 
 *This action registers user and sends confirmation email*
 
@@ -36,7 +36,7 @@ IF(reponse.code == 200)
 
 ## User Login
 
-*.../api/identity/login*
+*. . . /api/identity/login*
 
 *Before Login you must REGISTER!!*
 
@@ -75,7 +75,7 @@ IF (reponse.code == 200)
 
 ## Get Courses 
 
-*api/courses*
+*. . . /api/courses*
 
 *Return list of courses if User authenticated*
 
