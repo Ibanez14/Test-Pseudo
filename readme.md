@@ -2,8 +2,8 @@
 ## USER REGISTRATION
 
 
-// .../api/identity/register
-// This action registers user and sends confirmation email
+- .../api/identity/register
+- This action registers user and sends confirmation email
 
 
 
@@ -13,12 +13,12 @@ var userCredentials =
     Password: "qwerty"
 }
 
-// send credential to server
+- send credential to server
 
 var response =  http.Post(".../api/identity/register", userCredentials)
 
 
-// check response
+- check response
 
 IF(response.code == 400)
 {
@@ -36,8 +36,8 @@ IF(reponse.code == 200)
 
 ## User Login
 
-// .../api/identity/login
-// This action login in user and return 2 tokens => access_token, refresh_token
+- .../api/identity/login
+- This action login in user and return 2 tokens => access_token, refresh_token
 
 
 var userCredentials = 
@@ -47,7 +47,7 @@ var userCredentials =
 }
 
 
-// send credential to server
+- send credential to server
 var response =  http.Post(".../api/identity/login", userCredentials)
 
 
@@ -60,7 +60,8 @@ IF (response.code == 400)
 
 IF (reponse.code == 200)
 {
-    // get tokens from response
+  
+    *get tokens from response*
     var accessToken = response.object.access_token;
     var refreshToken = response.object.refresh_token;
 
