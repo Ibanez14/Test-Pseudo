@@ -2,11 +2,11 @@
 ## USER REGISTRATION
 
 
-- .../api/identity/register
-- This action registers user and sends confirmation email
+*.../api/identity/register
+* This action registers user and sends confirmation email
 
 
-
+```
 var userCredentials = 
 {
     Email : "username@example.com",
@@ -32,14 +32,14 @@ IF(reponse.code == 200)
 
 
 
-
+```
 
 ## User Login
 
-- .../api/identity/login
-- This action login in user and return 2 tokens => access_token, refresh_token
+*.../api/identity/login
+* This action login in user and return 2 tokens => access_token, refresh_token
 
-
+```
 var userCredentials = 
 {
     Email : "username@example.com",
@@ -71,15 +71,14 @@ IF (reponse.code == 200)
     LocalStorage.SetItem("refreshToken", refreshToken);
 }
 
+```
 
+## Get Courses 
 
-## Get Courses
+*api/courses
+*Return list of courses if User authenticated
 
-// api/courses
-// Return list of courses if User authenticated
-
-
-
+```
 var accessToken = LocalStorage.GetItem("accessToken");
 
 // attach access token to http
@@ -95,11 +94,11 @@ if(response.code == 200)
 {
     DisplayToUser(response.object.courses);
 }
+```
 
 
 
-
-
+```
 if(response == 401)
 {
     // get your tokens from local storage and send them to server to get new tokens
@@ -142,3 +141,4 @@ if(response == 401)
     DisplayToUser(response.object.courses);
 
 }
+```
