@@ -104,7 +104,8 @@ if(response == 401)
 {
     // get your tokens from local storage and send them to server to get new tokens
     var refreshTokeb = LocalStorage.GetItem("refreshToken");
-
+    var accessToken = LocalStorage.GetItem("accessToken");
+    
     // create new object and 
     var tokens = 
     {
